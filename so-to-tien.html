@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let money = +(prompt(" "));
+function demTien(money){
+a =Math.floor(money/50000);
+b =Math.floor((money %50000)/20000);
+c =Math.floor((money%20000)/10000);
+d =Math.floor((money %10000)/5000);
+    e =Math.floor((money%5000)/2000);
+f =(money - a*50000- b*20000 -c*10000-d*5000-e*2000);
+document.write(a + "&nbsptờ 50000VND" +"<br>"+ b + "&nbspTờ 20000VND" +"<br>"+ c + "&nbsptờ 10000VND" +"<br>"+ d + "&nbsptờ 5000VND" +"<br>"+ e + "&nbsptờ 2000VND" + "<br>" +f + "&nbsptờ 1000VND" );
+}
+demTien(money);
+</script>
+
+</body>
+</html>

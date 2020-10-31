@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let money;
+    let km = +prompt("nhap so km di duoc");
+    function tinhTien(){
+        if (km <= 1){
+            money =15000;
+        }
+        if (km > 1 && km <= 5){
+            money = 13500*(km-1) +  15000;
+        }
+        if (km > 5 && km <= 120){
+            money = 15000 + 13500 * 4 + 11000 * (km -5);
+        }
+        if (km > 120){
+            money = (15000 + 13500 * 4 + 11000 * (km-5))*0.9;
+        }
+        return money;
+    }
+    document.write("So tien phai tra la"+tinhTien(km)+ "VND");
+</script>
+</body>
+</html>

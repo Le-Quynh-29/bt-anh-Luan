@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soNguyen = prompt("Nhap vao 1 so nguyen co 3 chu so");
+    function tinhSum(number){
+        let sum = 0;
+        for (let i =0; i < number.length ; i++) {
+            let x = parseInt(number[i])
+            sum = sum + x;
+
+        }
+        document.write(sum);
+    }
+    tinhSum(soNguyen);
+</script>
+</body>
+</html>

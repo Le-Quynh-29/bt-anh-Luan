@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    for (let i = 0; i < 7; i++) {
+        let arr = +prompt("nhap phan tu thu :" + i);
+        array.push(arr)
+    }
+    document.write(array);
+    function checkNumber(arr){
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i]>=0){
+                sum += arr[i];
+            }
+        }
+        return sum;
+    }
+    document.write(checkNumber(array));
+</script>
+</body>
+</html>
